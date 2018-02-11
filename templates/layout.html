@@ -1,0 +1,25 @@
+<!doctype html>
+<meta charset="utf-8"/>
+<head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
+    <!--<link rel="stylesheet" href="https://unpkg.com/react-vis/dist/style.css">-->
+    <!--react vis stylesheet-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!--vis config stylesheet-->
+    <link href="{{ url_for('static', filename='vis/dist/vis-network.min.css') }}" rel="stylesheet" type="text/css" />
+    <!--own stylesheet-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleCustom.css') }}">
+    <title>Data Explorer</title>
+</head>
+<h2 id="print">Interbank networks</h2>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% block body %}{% endblock %}

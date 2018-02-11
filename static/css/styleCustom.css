@@ -1,0 +1,269 @@
+/* custom styles */
+
+html {
+    font-family: 'Quicksand';
+    /*font-family:  monospace;*/
+    /*text-transform: uppercase;*/
+    font-weight: 400;
+    font-size: 25px;
+}
+
+h2 {
+    background-color: #222;
+    height: 60px;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: white;
+    /*text-transform: uppercase;*/
+  }
+
+h3 {
+    background-color:#222;
+    height: 30px;
+    padding: 10px;
+    margin-top: 0px;
+    color: white;
+}
+
+label {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    line-height: 25px;
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-item {
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.option-list{
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.control-option{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+}
+
+.button2 {
+    width: 20%; 
+    height: 40px; 
+    margin: 10px; 
+    padding: 10px; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; 
+    border-radius: 3px;
+    -webkit-appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    
+}
+
+.button{
+    -webkit-appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    margin: 0em;
+}
+ 
+#select-files{
+    font-family: 'Quicksand';
+    font-size: 20px;
+}
+
+#select-files input[type=file] {
+    display:none;
+  }
+
+  #select-button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+    margin-left: 30px;
+}
+  
+#submit{
+    font-family: 'Quicksand';
+    font-size: 20px;
+}
+
+#export-button{
+    font-family: inherit;
+    font-size: 20px;
+}
+
+#vis-config {
+    font-size: 18px;
+    font-style: normal;
+    background: transparent;
+}
+
+div.vis-configuration {
+    font-size: 18px;
+    font-variant: normal;
+    font-style: normal;
+}
+
+#vis-config > div > div {
+    background: transparent;
+    font-style: normal;
+}
+
+#vis-config > div > div:nth-child(2) > div > i > b {
+    font-style: normal;
+}
+
+#vis-config > div > div:nth-child(5) > div > i > b {
+    font-style: normal;
+}
+
+div.vis-configuration.vis-config-item {
+    width: 700px;
+}
+
+div.vis-configuration.vis-config-label.vis-config-s3{
+    width: 150px;
+    font-style: normal;
+}
+
+div.vis-configuration.vis-config-label.vis-config-s4{
+    width: 150px;
+}
+
+.button:hover {
+        background: lightgrey;
+}
+
+.upload-option {
+    display: flex;
+} 
+
+.upload-item {
+    flex-direction: column;
+    height: 90px;
+    padding: 10px;
+    color: #222;
+}
+
+body {
+    background-color:#dfdfdf;
+    padding: 0px;
+  }
+
+.Select-control {
+    display: block;
+    float: left;
+    width: 495px;
+    height: 25px;
+    width: 30%; 
+    height: 40px; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; 
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+#canvas {
+    vertical-align: top;
+}
+
+#controls {
+    display: inline-block;
+    width: 25%;
+    height: 1300px;
+    margin: 5px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; 
+    border-radius: 3px;
+}
+
+#network {
+    display: inline-block;
+    width: 70%;
+    height: 1300px;
+    margin: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; 
+    border-radius: 3px;
+}
+
+.center-aligned-controls {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 100%
+} 
+.showcase-button {
+    background: white;
+    border: thin solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12;
+    font-weight: 600;
+    padding: 5px 10px;
+}  
+
+.appClass {
+    background: transparent;
+}

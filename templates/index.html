@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<script type="text/javascript">
+   //Imports all data
+   nodes=JSON.parse('{{nodes|safe}}');
+   edges=JSON.parse('{{edges|safe}}');
+   dates=JSON.parse('{{dates|safe}}');
+   hist_network=JSON.parse('{{hist_network|safe}}');
+   sectors=JSON.parse('{{sectors|safe}}');
+   banks=JSON.parse('{{banks|safe}}');
+</script>
+
+<div id="canvas" class="flex-container">
+
+    <div id="controls" class="flex-item">
+            <div class="option-list">
+
+                <div class="control-option">
+                    <input id="hist_network_select" type="checkBox" class="checkbox" onclick="switch_history()"></input>
+                    <label for="hist_network_select">Fix to saved positions</label>
+                </div>
+            
+                <div class="control-option">
+                    <select class="Select-control" id="date" value="init()" onChange="switch_date()"></select>
+                </div>
+
+                <div class="control-option">
+                    <select class="Select-control" id="sector" onChange="selectNodesBySector()"></select>
+                </div>
+
+                <div class="control-option">
+                    <input type="checkBox" class="checkbox" id="color_node_select" checked="checked" onclick="switch_node_color()"></input>
+                    <label for="color_node_select">Color nodes by sector</label>
+                </div>
+
+                <div class="control-option">
+                    <input type="checkBox" class="checkbox" id="edge_node_select" onclick="switch_edge_color()"></input>
+                    <label for="color_edge_select">Color edges according to trend</label>
+                </div>
+
+                <div class='control-option'>
+                        <input id="export-button" class="button" type="button" onclick="exportNetwork()" value="export"></input>
+                    </div>
+                <!--<div class="control-option" id="vis-config"></div>-->
+
+            </div>
+
+                  
+    </div>
+
+    <div id="network" class="flex-item">
+           <!-- <div id="config"></div>-->
+    </div>
+    
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery/dist/jquery.js') }}"></script>
+    <script type="text/javascript">
+        //var options = [];
+        $.each(dates, function(index, value) {
+            if (index == dates.length-1) {
+                jQuery("#date").append('<option value="' + value.dateID + '" selected>' + value.date + '</option>');
+            }
+            else {
+                jQuery("#date").append('<option value="' + value.dateID + '">' + value.date + '</option>');
+            }
+        });
+
+        $.each(sectors, function(index, value) {
+            if (index == sectors.length-1) {
+                jQuery("#sector").append('<option selected=selected value="' + value.sector+ '">' + value.sector + '</option>');
+            }
+            else {
+                jQuery("#sector").append('<option value="' +value.sector+ '">' + value.sector + '</option>');
+            }
+        });
+        
+    </script>
+    </div>
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename='vis/examples/network/exampleUtil.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='vis/dist/vis.js') }}"></script>
+
+<!--defines the physics of the network-->
+<script type="text/javascript" src="{{ url_for('static', filename='js/options.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/network.js') }}"></script>
+
+
+{% endblock %}

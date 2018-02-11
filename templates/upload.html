@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class='option-list'>
+    <p>Select nodes and edge files</p>  
+
+    <div class='upload-option'>
+        <div class='upload-item'>
+            <form id='select-files' method=post enctype=multipart/form-data>
+                <div id='select-files'>
+                    <label>
+                        <input id='select-files' type='file' name='file' multiple>
+                        <span class="button">Choose files</span>
+                    </label>
+                </div>
+        </div>
+        <div class='upload-item'>
+            <input id='submit' class='button' type=submit value=Submit>
+        </div>
+    </div>
+</div>
+    
+    </p>
+    </form>
+    <script type="text/javascript">
+        var input = document.querySelector('input');
+        var files = input.FileList
+        console.log(input.FileList)
+    </script>
+</div>
+{% endblock %}
