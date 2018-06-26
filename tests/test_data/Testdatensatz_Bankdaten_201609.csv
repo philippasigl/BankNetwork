@@ -1,0 +1,21 @@
+GeberNr,Bankname,Bankengruppe,Kapital,RWA,Bilanzsumme,PD
+1,Bank 1,Kreditbanken,42.7,356.2,1629,0.002406009
+2,Bank 2,Kreditbanken,29.2,190.5,480,0.000475302
+3,Bank 3,Kreditbanken,17.2,119,512,0.000165054
+4,Bank 4,Kreditbanken,2.5,13.1,60,0.000962053
+5,Bank 5,Kreditbanken,8.6,65.2,183,0.002089543
+6,Bank 6,Kreditbanken,2.3,14.5,42,0.000475302
+7,Bank 7,Kreditbanken,4.2,23.81,54,0.000676214
+8,Bank 8,Kreditbanken,2.1,9.456,32,0.000475302
+9,Bank 9,Landesbanken,3.3,24.497,91.3,0.000896553
+10,Bank 10,Landesbanken,4.2,23.87,100.1,0.001368717
+11,Bank 11,Landesbanken,1.8,27.684,103.12,0.001368717
+12,Bank 12,Landesbanken,12,77.406,280.4,0.000630175
+13,Bank 13,Landesbanken,7.5,52.849,230.34,0.00422942
+14,Bank 14,Landesbanken,3.3,24.497,100.2,0.000962053
+15,Bank 15,Genossenschaftsbanken,3.5,15.099,76.54,0.002089543
+16,Bank 16,Genossenschaftsbanken,1.3,5.47,25.43,0.000630175
+17,Bank 17,Genossenschaftsbanken,6.7,59.897,182.3,0.00194728
+18,Bank 18,Sparkassen,18.4,43.1,123,0.000743102
+19,Bank 19,Sparkassen,2,4.093,16.1,0.002089543
+20,Bank 20,Sparkassen,1.2,4,16.1,0.000475302

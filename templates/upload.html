@@ -1,8 +1,7 @@
 {% extends "layout.html" %}
 {% block body %}
-<div class='option-list'>
+<div class='option-list'  id='upload'>
     <p>Select nodes and edge files</p>  
-
     <div class='upload-option'>
         <div class='upload-item'>
             <form id='select-files' method=post enctype=multipart/form-data>
@@ -17,14 +16,23 @@
             <input id='submit' class='button' type=submit value=Submit>
         </div>
     </div>
+    <div class='container' id="error">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class='flashes'>
+                {% for message in messages %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+    </div>
 </div>
     
-    </p>
     </form>
     <script type="text/javascript">
         var input = document.querySelector('input');
         var files = input.FileList
-        console.log(input.FileList)
     </script>
 </div>
 {% endblock %}

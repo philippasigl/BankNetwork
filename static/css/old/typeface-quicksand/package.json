@@ -1,0 +1,48 @@
+{
+  "_from": "typeface-quicksand",
+  "_id": "typeface-quicksand@0.0.54",
+  "_inBundle": false,
+  "_integrity": "sha512-jArArHAh3UdLfoybVAoRgjAT+otdRwI+MIrwHNPuUE2FdWUyg8WqwteTo7YSoQPPE7IwkdCh1EBuJKicF49EzQ==",
+  "_location": "/typeface-quicksand",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "typeface-quicksand",
+    "name": "typeface-quicksand",
+    "escapedName": "typeface-quicksand",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/typeface-quicksand/-/typeface-quicksand-0.0.54.tgz",
+  "_shasum": "d8f60bcfbea663cda97a0e973f24e6c35d76561a",
+  "_spec": "typeface-quicksand",
+  "_where": "C:\\Users\\Philippa\\Python\\React\\bank_network",
+  "author": {
+    "name": "Kyle Mathews",
+    "email": "mathews.kyle@gmail.com"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Quicksand typeface",
+  "keywords": [
+    "typeface",
+    "font",
+    "font family",
+    "google fonts",
+    "quicksand"
+  ],
+  "license": "MIT",
+  "main": "index.css",
+  "name": "typeface-quicksand",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KyleAMathews/typefaces/tree/master/packages/quicksand"
+  },
+  "version": "0.0.54"
+}
